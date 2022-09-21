@@ -174,9 +174,9 @@ describe('pasarUsuarioAPremium(users)', function() {
   });
 });
 
-describe('sumarLikesDeUsuario(user)', function() {
+describe('sumarLikesDeUsuario(usuario)', function() {
   it('should return the sum of likes for all user posts', function() {
-    const user = {
+    const usuario = {
       usernombre: 'Jhon Doe',
       password: 'JavaScript es genial!',
       posts: [
@@ -207,7 +207,7 @@ describe('sumarLikesDeUsuario(user)', function() {
         },
       ],
     };
-    expect(sumarLikesDeUsuario(user)).toBe(286);
+    expect(sumarLikesDeUsuario(usuario)).toBe(286);
   });
 });
 
